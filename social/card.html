@@ -20,7 +20,7 @@
   .card {
     width: 1200px;
     height: 628px;
-    background: #ECE8E8;
+    background: #FF8AA8;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -35,7 +35,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #ECE8E8 0%, #F5AF94 20%, #FF8AA8 50%, #F5AF94 80%, #ECE8E8 100%);
+    background: linear-gradient(90deg, #FF8AA8 0%, #FFB8C9 20%, #FFFFFF 50%, #FFB8C9 80%, #FF8AA8 100%);
     z-index: 10;
   }
 
@@ -45,7 +45,7 @@
     right: 20%;
     width: 600px;
     height: 400px;
-    background: radial-gradient(ellipse, rgba(245, 175, 148, 0.15) 0%, rgba(245, 175, 148, 0.05) 50%, transparent 70%);
+    background: radial-gradient(ellipse, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 50%, transparent 70%);
     pointer-events: none;
     z-index: 2;
   }
@@ -56,7 +56,7 @@
     left: -40px;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(255, 138, 168, 0.10) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
     pointer-events: none;
     z-index: 2;
   }
@@ -74,12 +74,12 @@
     pointer-events: none;
     z-index: 2;
     user-select: none;
-    color: rgba(25, 25, 26, 0.06);
+    color: rgba(255, 255, 255, 0.08);
   }
 
-  .code-bg .c-accent { color: rgba(255, 138, 168, 0.22); }
-  .code-bg .c-warn { color: rgba(245, 175, 148, 0.16); }
-  .code-bg .c-dim { color: rgba(25, 25, 26, 0.07); }
+  .code-bg .c-accent { color: rgba(255, 255, 255, 0.18); }
+  .code-bg .c-warn { color: rgba(255, 255, 255, 0.14); }
+  .code-bg .c-dim { color: rgba(255, 255, 255, 0.06); }
 
   .brand {
     position: absolute;
@@ -95,7 +95,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 13px;
     font-weight: 600;
-    color: #19191A;
+    color: #FFFFFF;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
@@ -103,14 +103,14 @@
   .brand-line {
     width: 32px;
     height: 1px;
-    background: rgba(25, 25, 26, 0.12);
+    background: rgba(255, 255, 255, 0.3);
   }
 
   .brand-type {
     font-family: 'Roboto Mono', monospace;
     font-size: 11px;
     font-weight: 500;
-    color: #FF8AA8;
+    color: rgba(255, 255, 255, 0.7);
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
@@ -124,24 +124,24 @@
     align-items: center;
     gap: 8px;
     padding: 7px 16px;
-    border: 1px solid rgba(255, 138, 168, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 100px;
-    background: rgba(255, 138, 168, 0.06);
+    background: rgba(255, 255, 255, 0.1);
   }
 
   .badge-dot {
     width: 5px;
     height: 5px;
-    background: #FF8AA8;
+    background: #FFFFFF;
     border-radius: 50%;
-    box-shadow: 0 0 8px rgba(255, 138, 168, 0.5);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
   }
 
   .badge-text {
     font-family: 'Roboto Mono', monospace;
     font-size: 11px;
     font-weight: 600;
-    color: #FF8AA8;
+    color: #FFFFFF;
     letter-spacing: 0.08em;
   }
 
@@ -157,36 +157,36 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
     font-weight: 500;
-    color: rgba(25, 25, 26, 0.4);
+    color: rgba(255, 255, 255, 0.5);
     margin-bottom: 4px;
   }
 
   .cmd-line .prompt {
-    color: rgba(255, 138, 168, 0.6);
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .title {
     font-family: 'Inter', sans-serif;
     font-size: 72px;
     font-weight: 700;
-    color: #19191A;
+    color: #FFFFFF;
     letter-spacing: -0.045em;
     line-height: 1;
   }
 
   .title .dim {
-    color: rgba(25, 25, 26, 0.25);
+    color: rgba(255, 255, 255, 0.35);
   }
 
   .title .accent {
-    color: #FF8AA8;
+    color: #19191A;
   }
 
   .subtitle {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: rgba(25, 25, 26, 0.6);
+    color: rgba(255, 255, 255, 0.75);
     line-height: 1.5;
     margin-top: 12px;
   }
@@ -196,7 +196,7 @@
     align-items: flex-end;
     justify-content: space-between;
     padding-top: 20px;
-    border-top: 1px solid rgba(25, 25, 26, 0.06);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
   }
 
   .pills {
@@ -214,15 +214,15 @@
   }
 
   .pill-pink {
-    background: rgba(255, 138, 168, 0.08);
-    border: 1px solid rgba(255, 138, 168, 0.2);
-    color: #FF8AA8;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
   }
 
   .pill-ghost {
-    background: rgba(25, 25, 26, 0.03);
-    border: 1px solid rgba(25, 25, 26, 0.08);
-    color: rgba(25, 25, 26, 0.45);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.6);
   }
 
   .bottom-right {
@@ -236,7 +236,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 11px;
     font-weight: 400;
-    color: rgba(25, 25, 26, 0.4);
+    color: rgba(255, 255, 255, 0.5);
     letter-spacing: 0.02em;
   }
 
@@ -244,7 +244,7 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 12px;
     font-weight: 500;
-    color: rgba(25, 25, 26, 0.4);
+    color: rgba(255, 255, 255, 0.5);
   }
 </style>
 </head>
