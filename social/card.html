@@ -35,7 +35,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #ECE8E8 0%, #F5AF94 20%, #FF8AA8 50%, #90D79F 80%, #ECE8E8 100%);
+    background: linear-gradient(90deg, #ECE8E8 0%, #F5AF94 20%, #FF8AA8 50%, #F5AF94 80%, #ECE8E8 100%);
     z-index: 10;
   }
 
@@ -110,7 +110,7 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 11px;
     font-weight: 500;
-    color: #90D79F;
+    color: #FF8AA8;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
@@ -124,24 +124,24 @@
     align-items: center;
     gap: 8px;
     padding: 7px 16px;
-    border: 1px solid rgba(144, 215, 159, 0.4);
+    border: 1px solid rgba(255, 138, 168, 0.3);
     border-radius: 100px;
-    background: rgba(144, 215, 159, 0.08);
+    background: rgba(255, 138, 168, 0.06);
   }
 
   .badge-dot {
     width: 5px;
     height: 5px;
-    background: #90D79F;
+    background: #FF8AA8;
     border-radius: 50%;
-    box-shadow: 0 0 8px rgba(144, 215, 159, 0.5);
+    box-shadow: 0 0 8px rgba(255, 138, 168, 0.5);
   }
 
   .badge-text {
     font-family: 'Roboto Mono', monospace;
     font-size: 11px;
     font-weight: 600;
-    color: #5aba6e;
+    color: #FF8AA8;
     letter-spacing: 0.08em;
   }
 
@@ -153,12 +153,16 @@
     gap: 24px;
   }
 
-  .code-hint {
+  .cmd-line {
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
     font-weight: 500;
-    color: rgba(245, 175, 148, 0.6);
+    color: rgba(25, 25, 26, 0.4);
     margin-bottom: 4px;
+  }
+
+  .cmd-line .prompt {
+    color: rgba(255, 138, 168, 0.6);
   }
 
   .title {
@@ -175,7 +179,7 @@
   }
 
   .title .accent {
-    color: #90D79F;
+    color: #FF8AA8;
   }
 
   .subtitle {
@@ -208,10 +212,10 @@
     letter-spacing: 0.02em;
   }
 
-  .pill-mint {
-    background: rgba(144, 215, 159, 0.12);
-    border: 1px solid rgba(144, 215, 159, 0.3);
-    color: #5aba6e;
+  .pill-pink {
+    background: rgba(255, 138, 168, 0.08);
+    border: 1px solid rgba(255, 138, 168, 0.2);
+    color: #FF8AA8;
   }
 
   .pill-ghost {
@@ -277,7 +281,9 @@
   </div>
 
   <div class="content">
-    <div class="code-hint">&#9888; Minimum gas is 60,000, not 21,000</div>
+    <div class="cmd-line">
+      <span class="prompt">$</span> npx megaeth-gas --preset transfer
+    </div>
 
     <div>
       <div class="title">megaeth<span class="dim">-</span><span class="accent">gas</span></div>
@@ -286,8 +292,8 @@
 
     <div class="bottom-row">
       <div class="pills">
-        <span class="pill pill-mint">6 Presets</span>
-        <span class="pill pill-mint">Dual Gas Model</span>
+        <span class="pill pill-pink">6 Presets</span>
+        <span class="pill pill-pink">Dual Gas Model</span>
         <span class="pill pill-ghost">Compute + Storage</span>
         <span class="pill pill-ghost">CI-Ready</span>
         <span class="pill pill-ghost">MIT License</span>
